@@ -2,6 +2,10 @@
 # Getting & Cleaning Data - Final Project
 # R script file
 #
+# This software is provided under the GPL licence
+# This is free software and comes with ABSOLUTELY NO WARRANTY
+# Use this software at your own risk, no responsibility is accepted for issues or problems arising from use of this software
+#
 # Downloads & Saves data from the internet - FUNCTION obtain_data()
 #    Creates a new SubDirectory "data" (if it doesn't already exist)
 #    Saves the files
