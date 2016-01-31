@@ -89,19 +89,19 @@ The following fields (columns) are all numeric. And they contain data as defined
 ------------------------------------------------------
 Element | Description  
 ------- | -----------
-time_    | time based measurement in seconds (normalized and bounded within [-1,1])  
-freq_    | frequency based measurement in hz (normalized and bounded within [-1,1])  
- Body_            | Data attributed to body movement  
- Gravity_         | Data attributed to force of gravity  
- Accelerometer_   | Data collected from the accelerometer  
- Gyroscope_       | Data collected from the gyroscope  
- Jerk_            | Observation of a recognised "Jerk" signal  
- Magnitude_       | Magnitude of the signal in the designated axis  
- _stdeviation     | The source is a standard deviation  
- _mean            | The source is a mean  
- _Xaxis           | Data measured on the X axis  
- _Yaxis           | Data measured on the Y axis  
- _Zaxis           | Data measured on the Z axis  
+ time    | time based measurement in seconds (normalized and bounded within [-1,1])  
+ freq    | frequency based measurement in hz (normalized and bounded within [-1,1])  
+ Body            | Data attributed to body movement  
+ Gravity         | Data attributed to force of gravity  
+ Accelerometer   | Data collected from the accelerometer  
+ Gyroscope       | Data collected from the gyroscope  
+ Jerk            | Observation of a recognised "Jerk" signal  
+ Magnitude       | Magnitude of the signal in the designated axis  
+ stdeviation     | The source is a standard deviation  
+ mean            | The source is a mean  
+ Xaxis           | Data measured on the X axis  
+ Yaxis           | Data measured on the Y axis  
+ Zaxis           | Data measured on the Z axis  
 
     Thus "time_Body_Accelerometer_mean_Xaxis" is a time based metric, from the accelerometer, attributed to body movement and this is the mean of the X-axis movement  
   
