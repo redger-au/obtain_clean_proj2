@@ -1,6 +1,6 @@
 Introduction
 ---------------------------------------------------------------------------------------------------------------
-This codebook describes the data contained in the summary file ("/data/$OUTPUT/wearable_summary.txt") produced by "run_analysis.R"
+This codebook describes the data contained in the summary file ("/data/$OUTPUT/wearable_summary_tidy.txt") produced by "run_analysis.R"
 
 Source Data
 ---------------------------------------------------------------------------------------------------------------
@@ -111,70 +111,71 @@ Remaining field (column) names ==>
 
 Field Name | Class | Values | Metric  
 ---------- | ----- | ------ | ------
-time_Body_Accelerometer_mean_Yaxis| Numeric | [-1,1] | Time
-time_Body_Accelerometer_mean_Zaxis| Numeric | [-1,1] | Time
-time_Body_Accelerometer_stdeviation_Xaxis| Numeric | [-1,1] | Time
-time_Body_Accelerometer_stdeviation_Yaxis| Numeric | [-1,1] | Time
-time_Body_Accelerometer_stdeviation_Zaxis| Numeric | [-1,1] | Time
-time_Gravity_Accelerometer_mean_Xaxis| Numeric | [-1,1] | Time
-time_Gravity_Accelerometer_mean_Yaxis| Numeric | [-1,1] | Time
-time_Gravity_Accelerometer_mean_Zaxis| Numeric | [-1,1] | Time
-time_Gravity_Accelerometer_stdeviation_Xaxis| Numeric | [-1,1] | Time
-time_Gravity_Accelerometer_stdeviation_Yaxis| Numeric | [-1,1] | Time
-time_Gravity_Accelerometer_stdeviation_Zaxis| Numeric | [-1,1] | Time
-time_Body_Accelerometer_Jerk_mean_Xaxis| Numeric | [-1,1] | Time
-time_Body_Accelerometer_Jerk_mean_Yaxis| Numeric | [-1,1] | Time
-time_Body_Accelerometer_Jerk_mean_Zaxis| Numeric | [-1,1] | Time
-time_Body_Accelerometer_Jerk_stdeviation_Xaxis| Numeric | [-1,1] | Time
-time_Body_Accelerometer_Jerk_stdeviation_Yaxis| Numeric | [-1,1] | Time
-time_Body_Accelerometer_Jerk_stdeviation_Zaxis| Numeric | [-1,1] | Time
-time_Body_Gyroscope_mean_Xaxis| Numeric | [-1,1] | Time
-time_Body_Gyroscope_mean_Yaxis| Numeric | [-1,1] | Time
-time_Body_Gyroscope_mean_Zaxis| Numeric | [-1,1] | Time
-time_Body_Gyroscope_stdeviation_Xaxis| Numeric | [-1,1] | Time
-time_Body_Gyroscope_stdeviation_Yaxis| Numeric | [-1,1] | Time
-time_Body_Gyroscope_stdeviation_Zaxis| Numeric | [-1,1] | Time
-time_Body_Gyroscope_Jerk_mean_Xaxis| Numeric | [-1,1] | Time
-time_Body_Gyroscope_Jerk_mean_Yaxis| Numeric | [-1,1] | Time
-time_Body_Gyroscope_Jerk_mean_Zaxis| Numeric | [-1,1] | Time
-time_Body_Gyroscope_Jerk_stdeviation_Xaxis| Numeric | [-1,1] | Time
-time_Body_Gyroscope_Jerk_stdeviation_Yaxis| Numeric | [-1,1] | Time
-time_Body_Gyroscope_Jerk_stdeviation_Zaxis| Numeric | [-1,1] | Time
-time_Body_Accelerometer_Magnitude_mean| Numeric | [-1,1] | Time
-time_Body_Accelerometer_Magnitude_stdeviation| Numeric | [-1,1] | Time
-time_Gravity_Accelerometer_Magnitude_mean| Numeric | [-1,1] | Time
-time_Gravity_Accelerometer_Magnitude_stdeviation| Numeric | [-1,1] | Time
-time_Body_Accelerometer_Jerk_Magnitude_mean| Numeric | [-1,1] | Time
-time_Body_Accelerometer_Jerk_Magnitude_stdeviation| Numeric | [-1,1] | Time
-time_Body_Gyroscope_Magnitude_mean| Numeric | [-1,1] | Time
-time_Body_Gyroscope_Magnitude_stdeviation| Numeric | [-1,1] | Time
-time_Body_Gyroscope_Jerk_Magnitude_mean| Numeric | [-1,1] | Time
-time_Body_Gyroscope_Jerk_Magnitude_stdeviation| Numeric | [-1,1] | Time
-freq_Body_Accelerometer_mean_Xaxis| Numeric | [-1,1] | Frequency
-freq_Body_Accelerometer_mean_Yaxis| Numeric | [-1,1] | Frequency
-freq_Body_Accelerometer_mean_Zaxis| Numeric | [-1,1] | Frequency
-freq_Body_Accelerometer_stdeviation_Xaxis| Numeric | [-1,1] | Frequency
-freq_Body_Accelerometer_stdeviation_Yaxis| Numeric | [-1,1] | Frequency
-freq_Body_Accelerometer_stdeviation_Zaxis| Numeric | [-1,1] | Frequency
-freq_Body_Accelerometer_Jerk_mean_Xaxis| Numeric | [-1,1] | Frequency
-freq_Body_Accelerometer_Jerk_mean_Yaxis| Numeric | [-1,1] | Frequency
-freq_Body_Accelerometer_Jerk_mean_Zaxis| Numeric | [-1,1] | Frequency
-freq_Body_Accelerometer_Jerk_stdeviation_Xaxis| Numeric | [-1,1] | Frequency
-freq_Body_Accelerometer_Jerk_stdeviation_Yaxis| Numeric | [-1,1] | Frequency
-freq_Body_Accelerometer_Jerk_stdeviation_Zaxis| Numeric | [-1,1] | Frequency
-freq_Body_Gyroscope_mean_Xaxis| Numeric | [-1,1] | Frequency
-freq_Body_Gyroscope_mean_Yaxis| Numeric | [-1,1] | Frequency
-freq_Body_Gyroscope_mean_Zaxis| Numeric | [-1,1] | Frequency
-freq_Body_Gyroscope_stdeviation_Xaxis| Numeric | [-1,1] | Frequency
-freq_Body_Gyroscope_stdeviation_Yaxis| Numeric | [-1,1] | Frequency
-freq_Body_Gyroscope_stdeviation_Zaxis| Numeric | [-1,1] | Frequency
-freq_Body_Accelerometer_Magnitude_mean| Numeric | [-1,1] | Frequency
-freq_Body_Accelerometer_Magnitude_stdeviation| Numeric | [-1,1] | Frequency
-freq_BodyBody_Accelerometer_Jerk_Magnitude_mean| Numeric | [-1,1] | Frequency
-freq_BodyBody_Accelerometer_Jerk_Magnitude_stdeviation| Numeric | [-1,1] | Frequency
-freq_BodyBody_Gyroscope_Magnitude_mean| Numeric | [-1,1] | Frequency
-freq_BodyBody_Gyroscope_Magnitude_stdeviation| Numeric | [-1,1] | Frequency
-freq_BodyBody_Gyroscope_Jerk_Magnitude_mean| Numeric | [-1,1] | Frequency
-freq_BodyBody_Gyroscope_Jerk_Magnitude_stdeviation| Numeric | [-1,1] | Frequency
+time_Body_Accelerometer_mean_Xaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Accelerometer_mean_Yaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Accelerometer_mean_Zaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Accelerometer_stdeviation_Xaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Accelerometer_stdeviation_Yaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Accelerometer_stdeviation_Zaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Gravity_Accelerometer_mean_Xaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Gravity_Accelerometer_mean_Yaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Gravity_Accelerometer_mean_Zaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Gravity_Accelerometer_stdeviation_Xaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Gravity_Accelerometer_stdeviation_Yaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Gravity_Accelerometer_stdeviation_Zaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Accelerometer_Jerk_mean_Xaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Accelerometer_Jerk_mean_Yaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Accelerometer_Jerk_mean_Zaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Accelerometer_Jerk_stdeviation_Xaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Accelerometer_Jerk_stdeviation_Yaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Accelerometer_Jerk_stdeviation_Zaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_mean_Xaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_mean_Yaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_mean_Zaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_stdeviation_Xaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_stdeviation_Yaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_stdeviation_Zaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_Jerk_mean_Xaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_Jerk_mean_Yaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_Jerk_mean_Zaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_Jerk_stdeviation_Xaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_Jerk_stdeviation_Yaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_Jerk_stdeviation_Zaxis| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Accelerometer_Magnitude_mean| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Accelerometer_Magnitude_stdeviation| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Gravity_Accelerometer_Magnitude_mean| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Gravity_Accelerometer_Magnitude_stdeviation| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Accelerometer_Jerk_Magnitude_mean| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Accelerometer_Jerk_Magnitude_stdeviation| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_Magnitude_mean| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_Magnitude_stdeviation| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_Jerk_Magnitude_mean| Numeric | Number In Range [-1,1] | Time (normalised)  
+time_Body_Gyroscope_Jerk_Magnitude_stdeviation| Numeric | Number In Range [-1,1] | Time (normalised)  
+freq_Body_Accelerometer_mean_Xaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Accelerometer_mean_Yaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Accelerometer_mean_Zaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Accelerometer_stdeviation_Xaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Accelerometer_stdeviation_Yaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Accelerometer_stdeviation_Zaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Accelerometer_Jerk_mean_Xaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Accelerometer_Jerk_mean_Yaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Accelerometer_Jerk_mean_Zaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Accelerometer_Jerk_stdeviation_Xaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Accelerometer_Jerk_stdeviation_Yaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Accelerometer_Jerk_stdeviation_Zaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Gyroscope_mean_Xaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Gyroscope_mean_Yaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Gyroscope_mean_Zaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Gyroscope_stdeviation_Xaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Gyroscope_stdeviation_Yaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Gyroscope_stdeviation_Zaxis| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Accelerometer_Magnitude_mean| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_Body_Accelerometer_Magnitude_stdeviation| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_BodyBody_Accelerometer_Jerk_Magnitude_mean| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_BodyBody_Accelerometer_Jerk_Magnitude_stdeviation| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_BodyBody_Gyroscope_Magnitude_mean| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_BodyBody_Gyroscope_Magnitude_stdeviation| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_BodyBody_Gyroscope_Jerk_Magnitude_mean| Numeric | Number In Range [-1,1] | Frequency (normalised)  
+freq_BodyBody_Gyroscope_Jerk_Magnitude_stdeviation| Numeric | Number In Range [-1,1] | Frequency (normalised)  
 
 
