@@ -71,7 +71,7 @@ chrFile_train_activity   <- "./UCI HAR Dataset/train/y_train.txt"
 
 chrData_output_subdir    <- "./$OUTPUT"
 chrFile_output_base      <- "./$OUTPUT/wearable_base.txt"
-chrFile_output_summary   <- "./$OUTPUT/wearable_summary.txt"
+chrFile_output_summary   <- "./$OUTPUT/wearable_summary_tidy.txt"
 #
 obtain_data <- function() {
     # Remember working directory
@@ -125,6 +125,10 @@ read_files <- function(booInclude_all_mean_std_cols=FALSE, booWrite_output_file=
     chrCol_names <- gsub("-Y","-Yaxis",chrCol_names)              # Translate axis name
     chrCol_names <- gsub("-Z","-Zaxis",chrCol_names)              # Translate axis name
     chrCol_names <- gsub("\\(\\)","",chrCol_names)                # Remove brackets from mean and std
+    chrCol_names <- gsub("-","_",chrCol_names)                    # Change dash("-") to underscore - make "parser safe"
+    # NOTE Lecturer says field names should ONLY contain letters and numbers. THAT'S CRAZY so I won't do it
+    #   Why on earth the R designers chose to default " " translation to "." is beyond me.
+    #   "." is NOT safe for parsers, it has lexical meaning which underscore ("_") does not.
 
     numCol_ids   <- as.numeric(dfFeature_names$colid[booName_ind])
 
