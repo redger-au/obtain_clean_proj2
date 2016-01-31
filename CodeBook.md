@@ -74,21 +74,15 @@ The above data is then summarised as
 *  Additionally the sourcecategory column is dropped
 
 
-FIELD (Column) Definitions
----------------------------------------------------------------------------------------------------------------
+FIELD (Column) Definitions For Output File (wearable_summary_tidy.txt)
+-----------------------------------------------------------------------
 The first 2 fields (columns) are defined here as they are the "key" data whereas the rest are all measurement data  
 
-1.  activity               (Character)  
-+  Describes the activity attributed to this observation. Values are
-    +  WALKING
-    +  WALKING_UPSTAIRS
-    +  WALKING_DOWNSTAIRS
-    +  SITTING
-    +  STANDING
-    +  LAYING
-2.  subject               (Character containing numbers in the range 1-30 as characters)  
-+  Code number referring to the subject (coded for privacy) this observation was gathered from  
-  
+Field Name | Description | Class | Values
+---------- | ----------- | ----- | ------
+activity | Describes the activity attributed to this observation. | Character | WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING  
+subject  | Code number referring to the subject (coded for privacy) this observation was gathered from | Character | numbers in the range 1-30 as characters)  
+
   
 The following fields (columns) are all numeric. And they contain data as defined by their name elements, as follows  
 
@@ -108,8 +102,6 @@ freq_    | frequency based measurement in hz (normalized and bounded within [-1,
  _Xaxis           | Data measured on the X axis  
  _Yaxis           | Data measured on the Y axis  
  _Zaxis           | Data measured on the Z axis  
-------------------------------------------------------
-Table: Field Name Elements
 
     Thus "time_Body_Accelerometer_mean_Xaxis" is a time based metric, from the accelerometer, attributed to body movement and this is the mean of the X-axis movement  
   

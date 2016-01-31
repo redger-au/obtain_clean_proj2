@@ -1,9 +1,3 @@
----
-output: 
-  html_document: 
-    keep_md: yes
-    toc: yes
----
 # obtain_clean_proj2
 Coursera Getting &amp; Cleaning Data Course - Project #2 software  
 
@@ -31,14 +25,14 @@ When the executable is run, 2 new sub-directories will be created (if they don't
   
 The Summary output (file) will be saved in the $OUTPUT subdirectory as  
 
-*  /data/$OUTPUT/wearable_summary.txt  
+*  /data/$OUTPUT/wearable_summary_tidy.txt  
 *  If this file already exists - it will be over-written  
   
 *  The output file will be written in text format  
 *    The first line contain field(column) names  
 *    Fields(columns) are separated by a blank(space)  
 
-Data contained within the "wearable_summary.txt" file is described in 
+Data contained within the "wearable_summary_tidy.txt" file is described in 
 
 *  CodeBook.md  
 
